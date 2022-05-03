@@ -1,10 +1,72 @@
-#thirdDiv { height: 600px; 
-    width: 500px; 
-    background-color: coral; 
-    padding: 50px; 
-    border-style: double; 
-    border-color: darkorange;
-    border-width: 20px; 
+#principal {
+    background-image: url("https://www.serargentino.com/public/images/2020/03/milanesa-napolitana-773x458.jpeg");
+    background-size: cover;
 }
+    .divClass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .divClass h1 {
+            font-size: 70px;
+            font-weight: 1000;
+            text-shadow: -2px -2px 1px #000;
+            color: white
+        }
+        
+        .divClass h3 {
+            margin-top: 0;
+            font-size: 50px;
+            text-shadow: -2px -2px 1px #000;
+            color: yellow;
+        }
 
-#spanId {font-size: 18px;margin: 50px;}
+        .divClass h4 {
+            margin-top: 0;
+            border-style: dotted;
+            color: white
+        }
+
+        .divClass a {
+            color: yellow;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #spanId {
+            background-color: khaki;
+            border-radius: 5px;
+            text-align: justify;
+            font-size: 18px;
+            margin: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        }
+    
+    .imgMilas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-top: 50px;
+    }
+        #thirdDiv {
+            width: 500px;
+            height: 600px;
+            background-color: rgb(216, 205, 200);
+        
+            padding: 50px; 
+            border-style: groove; 
+            border-color: rgb(184, 135, 135);
+            border-width: 10px;
+        }
+            #thirdDiv ul {
+                list-style-image: url("../img/sandwich2b.png");
+            }
+
+            #thirdDiv img {
+                width: 400px;
+                height: 310px;
+            }
