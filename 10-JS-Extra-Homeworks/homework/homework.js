@@ -128,25 +128,17 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-  function BuscarMenor(arr) {
-    let menor = arr[0].length;
-    let index_elemento_menor = 0;
-    for (let index = 1; index < arr.length; index++) {
-      if (arr[index].length < menor) {          
-        menor = arr[index].length;
-        index_elemento_menor = index;
-      }   
+  function compareStrsLength(str1, str2) {
+    if (str1.length > str2.length) {
+      return 1;
+    } else if (str1.length < str2.length) {
+      return -1;
+    } else {
+      return 0;
     }
-    
-    return index_elemento_menor;
-  }
- 
-  let array_ordenado = [];      
-  while (arr.length > 0) {
-    array_ordenado.push(arr.splice(BuscarMenor(arr), 1)[0]);
   }
 
-  return array_ordenado;
+  return arr.sort(compareStrsLength);
 }
 
 
@@ -156,16 +148,16 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
-  arrelo_union = [];
+  arreglo_union = [];
   for (let index = 0; index < arreglo1.length; index++) {
       for (let index2 = 0; index2 < arreglo2.length; index2++) {
           if (arreglo1[index]===arreglo2[index2]) {
-            arrelo_union.push(arreglo1[index]);
+            arreglo_union.push(arreglo1[index]);
           }
       }
   }
 
-  return arrelo_union;
+  return arreglo_union;
 }
 
 
